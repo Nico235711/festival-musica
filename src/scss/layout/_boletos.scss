@@ -1,0 +1,71 @@
+.boletos {
+  padding: $separacion 0;
+
+  h3 {
+    text-align: center;
+    color: $blanco;
+  }
+
+  .contenedor-boletos {
+    @include grid(2, $separacion);
+    margin-top: calc($separacion / 2);
+  }
+
+  .plan {
+    p {
+      font-size: 2rem;
+      color: $blanco;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.pase {
+  width: 100%;
+  border-collapse: collapse;
+
+  thead {
+    background-color: $rosa;
+
+    th {
+      padding: calc($separacion / 4);
+      color: $blanco;
+      font-weight: $delgada;
+      font-size: 2rem;
+      text-transform: uppercase;
+
+      @include tablet {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  tbody {
+    background-color: $blanco;
+
+    td {
+      padding: calc($separacion / 4);
+      border-bottom: 2px solid #e1e1e1;
+    }
+
+    tr {
+      &:last-of-type {
+        td {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  tfoot {
+    background-color: $morado;
+
+    td {
+      padding: calc($separacion / 4);
+      font-size: 2rem;
+      text-align: center;
+      color: $blanco;
+    }
+  }
+}
