@@ -10,7 +10,7 @@ function crearGaleria() {
   for (let index = 1; index <= 12; index++) {
     // creo un elemento img para cada imagen
     const imagen = document.createElement("IMG")
-    imagen.src = `build/img/thumb/${index}.jpg`
+    imagen.src = `dist/img/thumb/${index}.jpg`
     imagen.alt = "imagen de la galeria"
 
     // le creo un id a la imagen
@@ -33,7 +33,7 @@ function mostrarImagen(event) {
   // convierto el id de la imagen en tipo numero
   const id = parseInt(event.target.dataset.imagenId);
   const imagen = document.createElement("IMG")
-  imagen.src = `build/img/grande/${id}.jpg`
+  imagen.src = `dist/img/grande/${id}.jpg`
 
   const overlay = document.createElement("DIV")
   overlay.classList.add("overlay")
