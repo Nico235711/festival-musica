@@ -22,9 +22,9 @@ const paths = {
 }
 
 const build = {
-  css: "build/css",
-  img: "build/img",
-  js: "build/js"
+  css: "dist/css",
+  img: "dist/img",
+  js: "dist/js"
 }
 
 function css() {
